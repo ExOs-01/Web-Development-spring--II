@@ -4,107 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
   </head>
 
   <body>
-    <h2>Feedback Form</h2>
-    <hr />
 
-    <form method="post" action="/submit">
-      <label for="fullname">Full Name</label>
-      <br />
-      <input
-        type="text"
-        placeholder="Enter your full name"
-        name="fullname"
-        id="fullname"
-        required
-        minlength="3"
-        maxlength="50"
-      />
-      <br />
-      <br />
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
 
-      <label for="email">Email Address</label>
-      <br />
-      <input
-        type="email"
-        placeholder="Enter your email"
-        name="email"
-        id="email"
-        required
-      />
-      <br />
-      <br />
+    <div class="page-top">
 
-      <p>Rating</p>
-      <input
-        type="radio"
-        name="rating"
-        id="very-satisfied"
-        value="very-satisfied"
-      />
-      <label for="very-satisfied">Very Satisfied</label> <br />
-      <input type="radio" name="rating" id="satisfied" value="satisfied" />
-      <label for="satisfied">Satisfied</label> <br />
-      <input type="radio" name="rating" id="neutral" value="neutral" />
-      <label for="neutral">Neutral</label> <br />
-      <input type="radio" name="rating" id="unsatisfied" value="unsatisfied" />
-      <label for="unsatisfied">Unsatisfied</label> <br />
-      <br />
+      <div class="main-section">
 
-      <p>Interests</p>
-      <input
-        type="checkbox"
-        name="interests"
-        id="web-dev"
-        value="web-development"
-      />
-      <label for="web-dev">Web Development</label> <br />
-      <input
-        type="checkbox"
-        name="interests"
-        id="mobile-dev"
-        value="mobile-development"
-      />
-      <label for="mobile-dev">Mobile Development</label> <br />
-      <input
-        type="checkbox"
-        name="interests"
-        id="ai-ml"
-        value="ai-machine-learning"
-      />
-      <label for="ai-ml">AI & Machine Learning</label> <br />
-      <br />
+        <div class="important-box">Important</div>
 
-      <label for="country">Country</label>
-      <br />
-      <select name="country" id="country" required>
-        <option value="">Select your country</option>
-        <option value="nepal">Nepal</option>
-        <option value="india">India</option>
-        <option value="usa">United States</option>
-        <option value="uk">United Kingdom</option>
-      </select>
-      <br />
-      <br />
+        <h2 id="page-title">Feedback Form</h2>
+        <hr />
 
-      <label for="message">Write your feedback here</label>
-      <br />
-      <textarea
-        name="message"
-        id="message"
-        cols="30"
-        rows="5"
-        placeholder="Write your feedback here"
-        minlength="10"
-        maxlength="500"
-      ></textarea>
-      <br />
-      <br />
+        <p style="color: blue;">This paragraph uses inline CSS.</p>
 
-      <input type="submit" value="Submit" />
-      <br />
-    </form>
+        <p class="intro">Please fill in the form below and share your feedback with us.</p>
+
+        <div class="info-box">
+          We value your feedback!
+        </div>
+        <hr />
+
+        <h2 class="sticky-title">Feedback Section</h2>
+
+        <div class="content">
+          <form method="post" action="/submit">
+
+            <label for="fullname">Full Name</label>
+            <br />
+            <input type="text" placeholder="Enter your full name" name="fullname" id="fullname" required minlength="3" maxlength="50" />
+            <br /><br />
+
+            <label for="email">Email Address</label>
+            <br />
+            <input type="email" placeholder="Enter your email" name="email" id="email" required />
+            <br /><br />
+
+            <p>Rating</p>
+            <input type="radio" name="rating" id="very-satisfied" value="very-satisfied" />
+            <label for="very-satisfied">Very Satisfied</label> <br />
+            <input type="radio" name="rating" id="satisfied" value="satisfied" />
+            <label for="satisfied">Satisfied</label> <br />
+            <input type="radio" name="rating" id="neutral" value="neutral" />
+            <label for="neutral">Neutral</label> <br />
+            <input type="radio" name="rating" id="unsatisfied" value="unsatisfied" />
+            <label for="unsatisfied">Unsatisfied</label> <br />
+            <br />
+
+            <p>Interests</p>
+            <input type="checkbox" name="interests" id="web-dev" value="web-development" />
+            <label for="web-dev">Web Development</label> <br />
+            <input type="checkbox" name="interests" id="mobile-dev" value="mobile-development" />
+            <label for="mobile-dev">Mobile Development</label> <br />
+            <input type="checkbox" name="interests" id="ai-ml" value="ai-machine-learning" />
+            <label for="ai-ml">AI &amp; Machine Learning</label> <br />
+            <br />
+
+            <label for="country">Country</label>
+            <br />
+            <select name="country" id="country" required>
+              <option value="">Select your country</option>
+              <option value="nepal">Nepal</option>
+              <option value="india">India</option>
+              <option value="usa">United States</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+            <br /><br />
+
+            <label for="message">Write your feedback here</label>
+            <br />
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your feedback here" minlength="10" maxlength="500"></textarea>
+            <br /><br />
+
+            <div class="box">
+              <p>By submitting, you agree to our <span class="highlight">terms and conditions</span>.</p>
+            </div>
+
+            <input type="submit" value="Submit" />
+            <br />
+          </form>
+        </div>
+
+        <hr />
+        <a href="index.html">Home</a>
+        <br />
+
+      </div>
+    </div>
+
   </body>
 </html>
