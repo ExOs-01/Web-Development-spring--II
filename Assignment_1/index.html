@@ -4,35 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Welcome to My First Webpage</h1>
-    <hr />
 
-    <p>
-      Hi! My name is <strong>Abishank</strong>. I am a student at King's College
-      and I an interested in Share Market.
-    </p>
-    <hr />
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
 
-    <p><em>My Hobbies:</em></p>
-    <ol>
-      <li>Coding</li>
-      <li>Reading Books</li>
-      <li>Playing Football</li>
-    </ol>
-    <hr />
+    <div class="page-top">
 
-    <p><u>My Favorite Foods:</u></p>
-    <ul>
-      <li>Pizza</li>
-      <li>Momo</li>
-      <li>Fried Rice</li>
-    </ul>
-    <hr />
+      <div class="main-section">
 
-    <a href="about.html">About Me</a>
-    <br />
+        <div class="important-box">Important</div>
+
+        <h1 id="page-title">Welcome to My First Webpage</h1>
+        <hr />
+
+        <p style="color: blue;">This paragraph uses inline CSS.</p>
+
+        <p class="intro">
+          Hi! My name is <strong>Abishank</strong>. I am a student at King's College
+          and I am interested in the Share Market.
+        </p>
+        <hr />
+
+        <div class="info-box">
+          This div has a background color and centered text.
+        </div>
+        <hr />
+
+        <div class="box">
+          <p>This div shows the box model: width 300px, padding 20px, border 2px solid black, margin 15px.</p>
+        </div>
+        <hr />
+
+        <h2 class="sticky-title">My Hobbies</h2>
+
+        <div class="content">
+          <p>I enjoy a variety of hobbies. My favourite is <span class="highlight">Coding</span>.</p>
+          <ol>
+            <li>Coding</li>
+            <li>Reading Books</li>
+            <li>Playing Football</li>
+          </ol>
+        </div>
+        <hr />
+
+        <h2 class="sticky-title">My Favorite Foods</h2>
+
+        <div class="content">
+          <p>My favorite food is <span class="highlight">Momo</span>.</p>
+          <ul>
+            <li>Pizza</li>
+            <li>Momo</li>
+            <li>Fried Rice</li>
+          </ul>
+        </div>
+        <hr />
+
+        <h2>About the Share Market</h2>
+        <p>The share market is a place where people buy and sell shares of companies.</p>
+        <p>It is a great way to grow money over time if you invest wisely.</p>
+
+        <h2>My Learning Journey</h2>
+        <p>I started learning web development to build useful websites.</p>
+        <p>So far I have learned HTML and CSS. Next I will learn JavaScript.</p>
+        <hr />
+
+        <a href="about.html">About Me</a>
+        <br />
+        <a href="feedback.html">Feedback</a>
+
+      </div>
+    </div>
+
   </body>
 </html>
