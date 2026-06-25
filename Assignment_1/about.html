@@ -4,21 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        color: green;
+      }
+    </style>
   </head>
 
   <body>
-    <h2>About Me</h2>
-    <hr />
 
-    <p>
-      My name is <strong>Abishank</strong> and I am currently studying web
-      development. I love building websites and learning how the internet works
-      behind the scenes. My goal is to become a skilled full-stack developer in
-      the future.
-    </p>
-    <hr />
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
 
-    <a href="index.html">Home</a>
-    <br />
+    <div class="page-top">
+
+      <div class="main-section">
+
+        <div class="important-box">Important</div>
+
+        <h2 id="page-title">About Me</h2>
+        <hr />
+
+        <p style="color: blue;">This paragraph uses inline CSS.</p>
+
+        <p class="intro">
+          My name is <strong>Abishank</strong> and I am currently studying web development.
+          I love building websites and learning how the internet works behind the scenes.
+          My goal is to become a skilled full-stack developer in the future.
+        </p>
+        <hr />
+
+        <div class="info-box">
+          I am a beginner web developer from Nepal.
+        </div>
+        <hr />
+
+        <div class="box">
+          <p>This is the box model div: width 300px, padding 20px, border 2px solid black, margin 15px.</p>
+        </div>
+        <hr />
+
+        <h2 class="sticky-title">My Skills</h2>
+
+        <div class="content">
+          <p>I am learning <span class="highlight">HTML and CSS</span> right now.</p>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Basic JavaScript</li>
+          </ul>
+        </div>
+        <hr />
+
+        <h2 class="sticky-title">My Goals</h2>
+
+        <div class="content">
+          <p>My short-term goal is to finish this web development course.</p>
+          <p>My long-term goal is to become a <span class="highlight">full-stack developer</span>.</p>
+        </div>
+        <hr />
+
+        <a href="index.html">Home</a>
+        <br />
+
+      </div>
+    </div>
+
   </body>
 </html>
