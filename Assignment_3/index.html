@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - JS Async</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Assignment 3 - JS Async &amp; DOM</h1>
+    <hr>
+
+    <!-- Task 1: Dynamic Color Changer -->
+    <h2>Task 1: Dynamic Color Changer</h2>
+    <div id="colorBox"></div>
+    <br>
+    <label for="colorPicker">Pick a color: </label>
+    <input type="color" id="colorPicker" value="#6c63ff">
+    <button onclick="resetColor()">Reset</button>
+    <p id="colorLabel">Current color: #3a3a5c</p>
+    <hr>
+
+    <!-- Task 2: Callbacks -->
+    <h2>Task 2: Understanding Callbacks</h2>
+    <p>Calls getUser(id, callback) - waits 2 seconds then shows the user.</p>
+    <button onclick="runTask2()">Run getUser()</button>
+    <p id="task2Result"></p>
+    <hr>
+
+    <!-- Task 3: Callback Hell -->
+    <h2>Task 3: Callback Hell</h2>
+    <p>getUser → getPosts → getComments (deeply nested callbacks)</p>
+    <button onclick="runTask3()">Run Callback Chain</button>
+    <pre id="task3Result"></pre>
+    <hr>
+
+    <!-- Task 4: Promises -->
+    <h2>Task 4: Promises (.then / .catch)</h2>
+    <p>Same flow rewritten using Promises.</p>
+    <button onclick="runTask4()">Run with Promises</button>
+    <pre id="task4Result"></pre>
+    <hr>
+
+    <!-- Task 5: Async / Await -->
+    <h2>Task 5: Async / Await</h2>
+    <p>Same flow rewritten using async/await.</p>
+    <button onclick="runTask5()">Run showData()</button>
+    <pre id="task5Result"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
